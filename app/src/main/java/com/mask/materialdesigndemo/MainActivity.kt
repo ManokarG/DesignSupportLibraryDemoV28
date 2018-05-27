@@ -58,6 +58,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        bottomBar.title = "Material Title"
+        bottomBar.subtitle = "Material Sub Title"
+
         closeChip.setOnCloseIconClickListener {
             Toast.makeText(this@MainActivity, "Close Icon clicked", Toast.LENGTH_SHORT).show()
         }

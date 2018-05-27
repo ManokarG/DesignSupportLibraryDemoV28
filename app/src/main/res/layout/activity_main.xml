@@ -174,9 +174,15 @@
                         </android.support.design.chip.ChipGroup>
 
                     <HorizontalScrollView
-                        android:paddingEnd="40dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginStart="0dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
 
                         <android.support.design.chip.ChipGroup
                         app:chipSpacing="5dp"
@@ -211,6 +217,8 @@
                             android:layout_height="wrap_content" />
 
                     </android.support.design.chip.ChipGroup>
+
+                        </LinearLayout>
 
                     </HorizontalScrollView>
 
