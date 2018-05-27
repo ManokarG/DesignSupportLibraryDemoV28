@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mask.materialdesigndemo.MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btnBottomBar"
+                        android:layout_height="wrap_content"/>
+
+                    <android.support.design.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btnMaterialIcon"
+                        app:icon="@drawable/ic_android"
+                        android:text="Material Button"
+                        android:layout_height="wrap_content"/>
+
+                    <android.support.design.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:rippleColor="@color/colorRipple"
+                        app:icon="@drawable/ic_android"
+                        android:text="Button With Ripple"
+                        android:layout_height="wrap_content"/>
+
+                    <android.support.design.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:rippleColor="@color/colorRipple"
+                        app:icon="@drawable/ic_android"
+                        android:text="Button With Ripple"
+                        android:layout_height="wrap_content"/>
+
+                    <android.support.design.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:rippleColor="@color/colorRipple"
+                        app:icon="@drawable/ic_android"
+                        app:strokeWidth="3dp"
+                        app:strokeColor="@color/colorStroke"
+                        android:text="Button With Stroke"
+                        android:layout_height="wrap_content"/>
+
+                    <android.support.design.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:cornerRadius="10dp"
+                        app:icon="@drawable/ic_android"
+                        android:text="Button With Radius"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.chip.Chip
+                        style="@style/Chip"
+                        app:chipText="This is the chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.chip.Chip
+                        android:id="@+id/checkableChip"
+                        android:checkable="true"
+                        app:chipText="Checkable Chip"
+                        style="@style/Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.chip.Chip
+                        app:chipText="Chip With Icon"
+                        style="@style/Chip"
+                        android:id="@+id/chipWithIcon"
+                        app:chipIcon="@drawable/ic_android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.chip.Chip
+                        style="@style/Chip"
+                        android:id="@+id/chipSwitchMode"
+                        app:chipText="Single Line?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.chip.Chip
+                        style="@style/Chip"
+                        android:id="@+id/closeChip"
+                        app:chipText="Chip With Close Icon"
+                        app:closeIconEnabled="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.chip.ChipGroup
+                            app:chipSpacing="5dp"
+                            style="@style/Chip"
+                            android:id="@+id/chipGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.chip.Chip
+                                app:chipText="This"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="is"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="the"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="Chip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="Group"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="New"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="Material"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.chip.Chip
+                                app:chipText="Design"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </android.support.design.chip.ChipGroup>
+
+                    <HorizontalScrollView
+                        android:paddingEnd="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.chip.ChipGroup
+                        app:chipSpacing="5dp"
+                        style="@style/Chip"
+                        android:id="@+id/chipGroupCheckable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.chip.Chip
+                            app:chipText="Checkable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.design.chip.Chip
+                            app:chipText="Group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.design.chip.Chip
+                            app:chipText="Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.design.chip.Chip
+                            app:chipText="Material"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.design.chip.Chip
+                            app:chipText="Design"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.design.chip.ChipGroup>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:contentPadding="10dp"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="This is the some text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text="This is the some more text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </android.support.design.card.MaterialCardView>
+
+
+                        <android.support.design.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:strokeWidth="2dp"
+                            app:contentPadding="10dp"
+                            app:strokeColor="@color/colorRipple"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Material card with line"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text="This is the some more text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </android.support.design.card.MaterialCardView>
+
+                    </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_send"
+            android:id="@+id/fab"
+            app:layout_anchor="@+id/bottomBar"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/bottomBar"
+            app:backgroundTint="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
